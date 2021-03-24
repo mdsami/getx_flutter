@@ -17,7 +17,7 @@ class AlertPage extends GetView<AlertController> {
           child: Text('Account'),
           onPressed: () => Get.toNamed(
             AppRoutes.Account,
-            arguments: {'name': 'md sami'},
+            arguments: {'name': 'Alert Page'},
           ),
         ),
       ),

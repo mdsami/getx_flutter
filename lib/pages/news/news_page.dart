@@ -10,14 +10,14 @@ class NewsPage extends GetView<NewsController> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Home"),
+        title: Text("News Page"),
       ),
       body: Center(
         child: RaisedButton(
           child: Text('Account'),
           onPressed: () => Get.toNamed(
             AppRoutes.Account,
-            arguments: {'name': 'md sami'},
+            arguments: {'name': 'News Page'},
           ),
         ),
       ),

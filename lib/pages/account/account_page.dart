@@ -10,7 +10,7 @@ class AccountPage extends GetView<AccountController> {
         title: Text("Account"),
       ),
       body: Center(
-        child: Text(controller.name),
+        child: Text("Account Page"),
       ),
     );
   }
