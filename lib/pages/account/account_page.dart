@@ -6,8 +6,11 @@ class AccountPage extends GetView<AccountController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text("Account"),
+      ),
       body: Center(
-        child: Text('Account Page'),
+        child: Text(controller.name),
       ),
     );
   }

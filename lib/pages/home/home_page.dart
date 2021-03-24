@@ -9,10 +9,16 @@ class HomePage extends GetView<HomeController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text("Home"),
+      ),
       body: Center(
         child: RaisedButton(
           child: Text('Account'),
-          onPressed: () => Get.toNamed(AppRoutes.Account),
+          onPressed: () => Get.toNamed(
+            AppRoutes.Account,
+            arguments: {'name': 'md sami'},
+          ),
         ),
       ),
     );
